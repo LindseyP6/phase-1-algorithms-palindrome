@@ -1,9 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+  for (let i = 0; i < word.length / 2; i++) {
+    if (word[i] !== word[word.length - 1 - i]) {
+      return false;
+    }
+  }
+return true;
+ }
+
+
 
 /* 
-  Add your pseudocode here
+  The goal is to write a function that returns true for words that read the same forward and backward. True for mom but false for robot.
 */
 
 /*
